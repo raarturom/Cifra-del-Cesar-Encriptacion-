@@ -33,7 +33,7 @@ static void requireAKey(int argc)
     }
 }
 
-// Converts the given number to the letter of the latin alphabet corresponding.
+// convierte los numeros dados a letras del alfabeto correspondiente.
 static char toLetter(unsigned index)
 {
     char letters[26] = {
@@ -42,7 +42,7 @@ static char toLetter(unsigned index)
     return letters[index];
 }
 
-// Prints the given vector of keys as a string.
+// Imprime los vectores de la llave como strings.
 static void printKey(std::vector<unsigned> keys)
 {
     std::cout << "The key is \"";
@@ -53,11 +53,11 @@ static void printKey(std::vector<unsigned> keys)
 
 /* argv contains (in the following order):
  * - argv[1]: 
- *  - "cipher" to cipher the content of the source file with a key.
- *  - "unipher" to uncipher the content of the source file with a key.
- *  - "attack" to uncipher the content of the source file without a key.
- * - argv[2] contains the path to the file where to store the result.
- * - argv[3] contains the key when needed.
+ *  - "cipher" Para cifrar el contenido del archivo original con una llave.
+ *  - "unipher" Para descifrar el contenido del archivo original con una llave.
+ *  - "attack" Para descifrar el contenido sin una llave.
+ * - argv[2] Contiene el directorio de donde estaran los resultados.
+ * - argv[3] Contiene la llave para cuando sea necesaria,
  */
 int main(int argc, const char *argv[])
 {
