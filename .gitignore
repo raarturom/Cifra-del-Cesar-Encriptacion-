@@ -1,0 +1,9 @@
+# Ignoring the object files
+*.o
+*.ko
+*.obj
+*.elf
+
+# Ignoring the executable files
+vigenere
+main
